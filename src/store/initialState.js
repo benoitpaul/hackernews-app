@@ -1,5 +1,6 @@
 export default {
     news: {
-      stories: []
+      stories: [],
+      loading: false
     }
   }
