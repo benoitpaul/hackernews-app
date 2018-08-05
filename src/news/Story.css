@@ -1,0 +1,18 @@
+.Story {
+    /*background-color: palegoldenrod;*/
+    margin: 10px;
+    text-align:left;
+}
+
+.Story-line {
+    font-size: 10pt;
+} 
+
+.Story-info {
+    font-size: 7pt;
+    color: #828282;
+}
+
+.Story-comments {
+    margin-left: 16px;
+}

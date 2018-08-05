@@ -1,9 +1,10 @@
 import React from 'react';
+import './Comments.css';
 
 class Comments extends React.Component {
     render() {
       return (
-        <div>
+        <div className="Comments">
             comments
         </div>
       )

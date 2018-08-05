@@ -6,3 +6,11 @@ export function loadBlogSuccess(stories) {
       stories
     };
 }
+
+export function loadStoryCommentsSuccess(story, comments) {
+  return { 
+      type: types.LOAD_STORY_COMMENTS_SUCCESS, 
+      story, 
+      comments
+    };
+}

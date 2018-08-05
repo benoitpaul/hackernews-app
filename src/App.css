@@ -1,10 +1,20 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: 
+    "header header"
+    "menu   content";
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+@media  (max-width: 768px) {
+  .App {
+    grid-template-columns: auto;
+    grid-template-areas: 
+      "header"
+      "menu"
+      "content";
+  }
 }
 
 .App-header {
@@ -12,7 +22,25 @@
   height: 150px;
   padding: 20px;
   color: white;
+  grid-area: header;
 }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-menu {
+  grid-area: menu;
+}
+
+
+.App-content {
+  background-color: rgb(246, 246, 239);
+  grid-area: content;
+  padding: 16px;
+}
+
 
 .App-title {
   font-size: 1.5em;

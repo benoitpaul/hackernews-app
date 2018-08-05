@@ -2,16 +2,18 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { actions } from './store/News';
+import './News.css';
+
+import Story from './news/Story';
 
 class News extends React.Component {
     render() {
-        console.log(this.props.news);
       return (
-        <div>
-            <button onClick={() => this.props.pending()}>load stories</button>
+        <div className="News">
+            <button onClick={() => this.props.getStories()}>load stories</button>
             { this.props.news.loading && <div>loading...</div> }
             {
-                this.props.news.stories.map(story => <div key={story}>{story}</div>)
+                this.props.news.stories.map(story => <Story key={story.id} {...this.props} story={story}></Story>)
             }
         </div>
       )

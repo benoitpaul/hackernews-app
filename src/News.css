@@ -1,0 +1,13 @@
+.News {
+    
+}
+
+.News a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.News a:visited {
+    color: #828282;
+    text-decoration: none;
+}
